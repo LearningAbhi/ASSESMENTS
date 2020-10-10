@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q1: SUBMIT FORM</title>
+    <link rel="stylesheet" type="text/css" href="submitForm.css" />
+    <script src="https://kit.fontawesome.com/f0563bc5d2.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+        <DIV class="container">
+				
+                <div class="navigation">
+                        <a class="active" href="..\Q2_LANDING PAGE\landingPage.html">Landing Page</a>
+                        <a href="..\Q1_SUBMIT FORM\submitForm.html">Submition Form</a>
+                        <a href="..\Q3_GRID VIEW\products.html">Shopping Cart</a>
+                      
+                      </div>
+            
+		
+            <form action="#" onsubmit="showMessage()">
+                <h2>PERSONAL DETAILS FORM</h2>
+                 <table class="table">
+                     <tr class="row" id="tr_1">
+                         <td class="col col-1" id="tr1_td1">Full Name</td>
+                         <td class="col col-2" id="tr1_td2">
+                            <div class="contents">
+                              <label for ="name"> <i class='fas fa-user-alt' style='font-size:18px'></i></label>
+                                <input type="text" id="name" size="34" placeholder='Full Name' required>
+                            </div>    
+                            </td>
+                     </tr>
+                     <tr class="row" id="tr_2">
+                            <td class="col-1" id="tr2_td1">Address Line 1</td>
+                            <td class="col-2" id="tr2_td2">
+                            <div class="contents">
+                                 <label for ="address-1">  <i class='far fa-id-badge' style='font-size:22px'></i></label>
+                                   <input type="text" id="address-1" size="34"  placeholder='Address Line 1' required>
+                            </div>
+                         </td>
+                    </tr>
+                        <tr class="row" id="tr_3">
+                                <td class="col-1" id="tr3_td1">Address Line 2</td>
+                                <td class="col-2" id="tr3_td2">
+                                <div class="contents">
+                                     <label for ="address-2">  <i class='far fa-id-badge' style='font-size:22px'></i></label>
+                                    <input type="text" id="address-2" size="34"  placeholder='Address Line 2' required>
+                                </div>
+                                </td>
+                        </tr>
+                        <tr class="row" id="tr_4">
+                                 <td class="col-1" id="tr4_td1">Address Line 2</td>
+                                <td class="col-2" id="tr4_td2">
+                                 <div class="contents">
+                                    <label for ="city">  <i class='far fa-building' style='font-size:20px'></i></label>
+                                    <input type="text" id="city" size="34"  placeholder='City' required>
+                                 </div>    
+                                </td>
+                        </tr>
+                        <tr class="row" id="tr_5">
+                                <td class="col-1" id="tr5_td1">State/Province/Region</td>
+                               <td class="col-2" id="tr5_td2">
+                                    <div class="contents">
+                                   <label for ="state">  <i class='fas fa-map-marker-alt' style='font-size:22px'></i></label>
+                                   <input type="text" id="state" size="34"  placeholder='State/Province/Region' required>
+                                    </div>
+
+                                </td>
+                       </tr>
+                       <tr class="row" id="tr_6">
+                            <td class="col-1" id="tr6_td1">Postal Code/ZIP</td>
+                           <td class="col-2" id="tr6_td2">
+                                <div class="contents">
+                               <label for ="zip">  <i class='far fa-envelope-open' style='font-size:20px'></i></label>
+                               <input type="text" id="zip" size="34"  placeholder='Postal Code/ZIP' required>
+                                </div>
+                            </td>
+                         </tr> 
+                        <tr class="row" id="tr_7">
+                                <td class="col-1" id="tr7_td1">Country</td>
+                               <td class="col-2" id="tr7_td2">
+                                    <div class="contents">
+                                   <label for ="country">  <i class='far fa-map' style='font-size:18px'></i></label>
+                                   <select id="country" style="width:89% ;height: 30px;" >
+                                        <option value="Afganistan">Afganistan</option>
+                                        <option value="Austrelia">Austrelia</option>
+                                        <option value="India" selected>India</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="USA">USA</option>
+                                        <option value="New Zeland">New Zeland</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Antartica">Antartica</option>
+                                        <option value="Ghana">Ghana</option>
+                                      </select>
+                                    </div>
+                                   </td>
+                             </tr>    
+
+                             <tr class="row" id="tr_8">
+                                    <td class="col-1" id="tr8_td1">Email</td>
+                                   <td class="col-2" id="tr_8td2">
+                                        <div class="contents">
+                                       <label for ="email"> <span> <i class='	fa fa-envelope' style='font-size:20px'></i></span></label>
+                                       <input type="email" id="email" size="34" placeholder='demo@mail.com' required>
+                                        </div>
+                                    </td>
+                             </tr>  
+ 
+                             <tr class="row" id="tr_9">
+                                    <td class="col-1" id="tr9_td1">Phone Number</td>
+                                   <td class="col-2" id="tr9_td2">
+                                       <div class="contents">
+                                       <label for ="phone">  <i class='	fa fa-phone' style='font-size:20px'></i></label>
+                                       <input type="text" id="phone" size="34"  placeholder='Phone Number' required>
+                                    </div>
+                                    </td>
+                                    
+                                                         
+                             <tr class="row" id="tr_10">
+                                    <td class="col-1" id="tr10_td1" colspan="2" style="text-align:center">
+                                        <input type="submit" id="btn" value="SUBMIT">
+                                    </td>
+                             </tr>  
+                                                                                   
+                 </table>
+
+
+            </form>
+        </DIV>
+        <script>
+            function showMessage()
+            {
+                alert("Thank you for Your Details!!!!")
+            }
+        </script>
+  </body>
+</html>
